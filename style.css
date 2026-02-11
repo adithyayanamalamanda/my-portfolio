@@ -912,8 +912,8 @@ nav ul li a:hover {
 .contact-intro {
     text-align: center;
     color: #9ca3af;
-    font-size: 1.2rem;
-    margin-bottom: 50px;
+    font-size: clamp(0.95rem, 2.5vw, 1.2rem);
+    margin-bottom: clamp(25px, 4vw, 50px);
     margin-top: -30px;
 }
 
@@ -934,12 +934,18 @@ nav ul li a:hover {
 .contact-item {
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding: 25px;
+    gap: clamp(12px, 3vw, 20px);
+    padding: clamp(15px, 3vw, 25px);
     background: #111827;
     border: 1px solid #374151;
     border-radius: 15px;
     transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.contact-item .contact-text {
+    min-width: 0;
+    overflow: hidden;
 }
 
 .contact-item:hover {
@@ -969,6 +975,8 @@ nav ul li a:hover {
     color: #9ca3af;
     text-decoration: none;
     transition: color 0.3s ease;
+    word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 .contact-item a:hover {
@@ -988,15 +996,17 @@ nav ul li a:hover {
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 18px 20px;
-    padding-left: 50px;
+    max-width: 100%;
+    padding: clamp(12px, 2vw, 18px) clamp(14px, 2vw, 20px);
+    padding-left: clamp(40px, 6vw, 50px);
     background: #111827;
     border: 2px solid #374151;
     border-radius: 15px;
     color: #f9fafb;
-    font-size: 1rem;
+    font-size: clamp(0.85rem, 2vw, 1rem);
     font-family: 'Poppins', sans-serif;
     transition: all 0.3s ease;
+    box-sizing: border-box;
 }
 
 .form-group textarea {
@@ -1007,7 +1017,7 @@ nav ul li a:hover {
 
 .form-group i {
     position: absolute;
-    left: 18px;
+    left: clamp(12px, 2vw, 18px);
     top: 50%;
     transform: translateY(-50%);
     color: #9ca3af;
@@ -1237,6 +1247,23 @@ footer {
     .contact-container {
         grid-template-columns: 1fr;
         gap: 30px;
+        width: 100%;
+    }
+
+    .contact-item:hover {
+        transform: none;
+    }
+
+    .contact-item i {
+        flex-shrink: 0;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .form-group {
+        width: 100%;
     }
 
     /* Footer */
