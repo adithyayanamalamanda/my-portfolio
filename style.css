@@ -63,7 +63,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
+    padding: 15px clamp(20px, 4vw, 40px);
     background: rgba(17, 24, 39, 0.95);
     backdrop-filter: blur(15px);
     position: fixed;
@@ -143,7 +143,7 @@ nav ul li a:hover {
 
 /* Section Styles */
 .section {
-    padding: 100px 50px;
+    padding: clamp(60px, 8vw, 100px) clamp(16px, 5vw, 50px);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -151,9 +151,9 @@ nav ul li a:hover {
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: clamp(30px, 5vw, 60px);
     color: #f9fafb;
     display: flex;
     align-items: center;
@@ -180,7 +180,7 @@ nav ul li a:hover {
 /* Hero Section */
 .home {
     min-height: 100vh;
-    padding-top: 120px;
+    padding-top: clamp(90px, 12vw, 120px);
     text-align: center;
     position: relative;
 }
@@ -237,7 +237,7 @@ nav ul li a:hover {
 }
 
 .home h1 {
-    font-size: 3.5rem;
+    font-size: clamp(1.7rem, 5vw, 3.5rem);
     font-weight: 700;
     margin-bottom: 15px;
     line-height: 1.2;
@@ -265,7 +265,7 @@ nav ul li a:hover {
 }
 
 .subtitle {
-    font-size: 1.5rem;
+    font-size: clamp(0.95rem, 2.5vw, 1.5rem);
     color: #9ca3af;
     font-weight: 500;
     margin-bottom: 10px;
@@ -273,15 +273,15 @@ nav ul li a:hover {
 
 .tagline {
     color: #8b5cf6;
-    font-size: 1.1rem;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
     margin-bottom: 25px;
 }
 
 .hero-description {
-    font-size: 1.1rem;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
     color: #9ca3af;
     line-height: 1.8;
-    margin-bottom: 40px;
+    margin-bottom: clamp(25px, 4vw, 40px);
 }
 
 .highlight {
@@ -1034,7 +1034,7 @@ nav ul li a:hover {
 /* Footer */
 footer {
     background: #111827;
-    padding: 50px 50px 30px;
+    padding: clamp(25px, 4vw, 50px) clamp(15px, 4vw, 50px) clamp(15px, 3vw, 30px);
     border-top: 1px solid #374151;
 }
 
@@ -1144,19 +1144,6 @@ footer {
     .projects-container {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .section {
-        padding: 80px 30px;
-    }
-
-    .section-title {
-        font-size: 2rem;
-        margin-bottom: 40px;
-    }
-
-    .home h1 {
-        font-size: 2.8rem;
-    }
 }
 
 /* Text Selection */
@@ -1173,7 +1160,6 @@ footer {
     }
 
     nav {
-        padding: 15px 20px;
         flex-wrap: wrap;
     }
 
@@ -1200,30 +1186,12 @@ footer {
     }
 
     /* Hero */
-    .section {
-        padding: 80px 20px;
-        min-height: auto;
-    }
-
     .home {
-        padding-top: 100px;
         min-height: auto;
     }
 
-    .home h1 {
-        font-size: 2.2rem;
-    }
-
-    .subtitle {
-        font-size: 1.1rem;
-    }
-
-    .tagline {
-        font-size: 1rem;
-    }
-
-    .hero-description {
-        font-size: 1rem;
+    .section {
+        min-height: auto;
     }
 
     .cta-buttons {
@@ -1243,71 +1211,22 @@ footer {
         display: none;
     }
 
-    /* About */
-    .about-container {
-        grid-template-columns: 1fr;
-    }
-
-    .about-card {
-        padding: 30px 20px;
-    }
-
-    /* Skills */
-    .skills-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .skill-category {
-        padding: 25px 20px;
-    }
-
-    /* Projects */
-    .projects-container {
-        grid-template-columns: 1fr;
-    }
-
-    .project-card {
-        padding: 25px;
-    }
-
-    /* Workshops */
-    .workshop-card {
-        padding: 25px;
-    }
-
-    .workshop-card h3 {
-        font-size: 1.3rem;
-    }
-
-    .workshop-tags {
-        gap: 8px;
-    }
-
-    .workshop-tags span {
-        padding: 8px 14px;
-        font-size: 0.85rem;
-    }
-
-    /* Leadership */
+    /* Grids to single column */
+    .about-container,
+    .skills-grid,
+    .projects-container,
     .leadership-container {
         grid-template-columns: 1fr;
-    }
-
-    .leadership-card {
-        padding: 25px;
     }
 
     /* Education */
     .education-card {
         flex-direction: column;
         text-align: center;
-        padding: 30px 20px;
     }
 
     .education-content h3 {
         justify-content: center;
-        font-size: 1.3rem;
     }
 
     .interest-tags {
@@ -1320,20 +1239,7 @@ footer {
         gap: 30px;
     }
 
-    .contact-item {
-        padding: 20px;
-    }
-
-    .contact-intro {
-        font-size: 1rem;
-        margin-bottom: 30px;
-    }
-
     /* Footer */
-    footer {
-        padding: 30px 20px 20px;
-    }
-
     .footer-content {
         flex-direction: column;
         text-align: center;
@@ -1349,36 +1255,9 @@ footer {
     .footer-social {
         justify-content: center;
     }
-
-    .section-title {
-        font-size: 1.8rem;
-        margin-bottom: 35px;
-    }
 }
 
 @media (max-width: 480px) {
-    .home h1 {
-        font-size: 1.7rem;
-    }
-
-    .subtitle {
-        font-size: 0.95rem;
-    }
-
-    .section-title {
-        font-size: 1.5rem;
-        margin-bottom: 30px;
-    }
-
-    .logo {
-        font-size: 1.2rem;
-    }
-
-    nav ul li a {
-        font-size: 0.85rem;
-        padding: 10px 12px;
-    }
-
     .about-icon {
         width: 60px;
         height: 60px;
@@ -1416,13 +1295,5 @@ footer {
     .btn-outline {
         padding: 12px 24px;
         font-size: 0.9rem;
-    }
-
-    footer {
-        padding: 25px 15px 15px;
-    }
-
-    .copyright {
-        font-size: 0.8rem;
     }
 }

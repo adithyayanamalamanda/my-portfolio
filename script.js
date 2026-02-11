@@ -138,11 +138,13 @@ function initNavbarEffect() {
         if (window.scrollY > 100) {
             nav.style.background = 'rgba(17, 24, 39, 0.98)';
             nav.style.boxShadow = '0 5px 30px rgba(0, 0, 0, 0.3)';
-            nav.style.padding = '10px 40px';
+            nav.style.paddingTop = '10px';
+            nav.style.paddingBottom = '10px';
         } else {
             nav.style.background = 'rgba(17, 24, 39, 0.95)';
             nav.style.boxShadow = 'none';
-            nav.style.padding = '15px 40px';
+            nav.style.paddingTop = '15px';
+            nav.style.paddingBottom = '15px';
         }
     });
 }
