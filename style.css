@@ -5,18 +5,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
 }
 
 body {
-    background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #0d0d2b 100%);
-    color: #e5e7eb;
+    background: #111827;
+    color: #f9fafb;
     min-height: 100vh;
     overflow-x: hidden;
-
 }
-
-
 
 /* Animated Background */
 .particles {
@@ -34,7 +30,7 @@ body {
     position: absolute;
     width: 4px;
     height: 4px;
-    background: linear-gradient(45deg, #00d4ff, #0066ff);
+    background: linear-gradient(45deg, #8b5cf6, #a78bfa);
     border-radius: 50%;
     animation: float 20s infinite ease-in-out;
     opacity: 0.5;
@@ -68,14 +64,14 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    background: rgba(10, 10, 30, 0.9);
+    background: rgba(17, 24, 39, 0.95);
     backdrop-filter: blur(15px);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+    border-bottom: 1px solid #374151;
     animation: slideDown 0.8s ease-out;
 }
 
@@ -100,7 +96,7 @@ nav ul {
 
 nav ul li a {
     padding: 8px 15px;
-    color: #94a3b8;
+    color: #9ca3af;
     text-decoration: none;
     border-radius: 20px;
     transition: all 0.3s ease;
@@ -115,15 +111,15 @@ nav ul li a i {
 }
 
 nav ul li a:hover {
-    color: #00d4ff;
-    background: rgba(0, 212, 255, 0.1);
+    color: #8b5cf6;
+    background: rgba(139, 92, 246, 0.1);
     transform: translateY(-2px);
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #00d4ff;
+    color: #8b5cf6;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -158,7 +154,7 @@ nav ul li a:hover {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 60px;
-    color: #fff;
+    color: #f9fafb;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -166,7 +162,7 @@ nav ul li a:hover {
 }
 
 .section-title i {
-    color: #00d4ff;
+    color: #8b5cf6;
 }
 
 .section-title::after {
@@ -177,7 +173,7 @@ nav ul li a:hover {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, #00d4ff, #0066ff);
+    background: linear-gradient(90deg, #8b5cf6, #a78bfa);
     border-radius: 2px;
 }
 
@@ -212,10 +208,10 @@ nav ul li a:hover {
     align-items: center;
     gap: 10px;
     padding: 8px 20px;
-    background: rgba(0, 255, 136, 0.1);
-    border: 1px solid rgba(0, 255, 136, 0.3);
+    background: rgba(139, 92, 246, 0.1);
+    border: 1px solid rgba(139, 92, 246, 0.3);
     border-radius: 50px;
-    color: #00ff88;
+    color: #a78bfa;
     font-size: 0.9rem;
     margin-bottom: 30px;
 }
@@ -223,7 +219,7 @@ nav ul li a:hover {
 .pulse {
     width: 10px;
     height: 10px;
-    background: #00ff88;
+    background: #a78bfa;
     border-radius: 50%;
     animation: pulseDot 2s infinite;
 }
@@ -232,11 +228,11 @@ nav ul li a:hover {
 
     0%,
     100% {
-        box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.5);
+        box-shadow: 0 0 0 0 rgba(139, 92, 246, 0.5);
     }
 
     50% {
-        box-shadow: 0 0 0 10px rgba(0, 255, 136, 0);
+        box-shadow: 0 0 0 10px rgba(139, 92, 246, 0);
     }
 }
 
@@ -248,7 +244,7 @@ nav ul li a:hover {
 }
 
 .gradient-text {
-    background: linear-gradient(135deg, #00d4ff, #0066ff, #00d4ff);
+    background: linear-gradient(135deg, #8b5cf6, #a78bfa, #8b5cf6);
     background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -270,26 +266,26 @@ nav ul li a:hover {
 
 .subtitle {
     font-size: 1.5rem;
-    color: #64748b;
+    color: #9ca3af;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
 .tagline {
-    color: #00d4ff;
+    color: #8b5cf6;
     font-size: 1.1rem;
     margin-bottom: 25px;
 }
 
 .hero-description {
     font-size: 1.1rem;
-    color: #94a3b8;
+    color: #9ca3af;
     line-height: 1.8;
     margin-bottom: 40px;
 }
 
 .highlight {
-    color: #00d4ff;
+    color: #8b5cf6;
     font-weight: 500;
 }
 
@@ -317,37 +313,37 @@ nav ul li a:hover {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #00d4ff, #0066ff);
-    color: #fff;
+    background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+    color: #f9fafb;
     border: none;
-    box-shadow: 0 5px 25px rgba(0, 212, 255, 0.4);
+    box-shadow: 0 5px 25px rgba(139, 92, 246, 0.4);
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 35px rgba(0, 212, 255, 0.5);
+    box-shadow: 0 10px 35px rgba(139, 92, 246, 0.5);
 }
 
 .btn-secondary {
-    background: rgba(0, 212, 255, 0.1);
-    color: #00d4ff;
-    border: 2px solid #00d4ff;
+    background: rgba(139, 92, 246, 0.1);
+    color: #8b5cf6;
+    border: 2px solid #8b5cf6;
 }
 
 .btn-secondary:hover {
-    background: rgba(0, 212, 255, 0.2);
+    background: rgba(139, 92, 246, 0.2);
     transform: translateY(-3px);
 }
 
 .btn-outline {
     background: transparent;
-    color: #fff;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: #f9fafb;
+    border: 2px solid #374151;
 }
 
 .btn-outline:hover {
-    border-color: #00d4ff;
-    color: #00d4ff;
+    border-color: #8b5cf6;
+    color: #8b5cf6;
     transform: translateY(-3px);
 }
 
@@ -357,7 +353,7 @@ nav ul li a:hover {
     left: 50%;
     transform: translateX(-50%);
     animation: bounce 2s infinite;
-    color: #64748b;
+    color: #9ca3af;
     font-size: 1.5rem;
 }
 
@@ -375,7 +371,7 @@ nav ul li a:hover {
 
 /* About Section */
 #about {
-    background: rgba(0, 0, 0, 0.2);
+    background: #1f2937;
 }
 
 .about-container {
@@ -387,8 +383,8 @@ nav ul li a:hover {
 }
 
 .about-card {
-    background: linear-gradient(145deg, rgba(0, 212, 255, 0.05), rgba(0, 102, 255, 0.05));
-    border: 1px solid rgba(0, 212, 255, 0.1);
+    background: rgba(139, 92, 246, 0.05);
+    border: 1px solid #374151;
     border-radius: 20px;
     padding: 40px 30px;
     text-align: center;
@@ -397,31 +393,31 @@ nav ul li a:hover {
 
 .about-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 212, 255, 0.15);
-    border-color: rgba(0, 212, 255, 0.3);
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.15);
+    border-color: rgba(139, 92, 246, 0.4);
 }
 
 .about-icon {
     width: 80px;
     height: 80px;
     margin: 0 auto 25px;
-    background: linear-gradient(135deg, #00d4ff, #0066ff);
+    background: linear-gradient(135deg, #8b5cf6, #a78bfa);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    color: #fff;
+    color: #f9fafb;
 }
 
 .about-card h3 {
     font-size: 1.4rem;
     margin-bottom: 15px;
-    color: #fff;
+    color: #f9fafb;
 }
 
 .about-card p {
-    color: #94a3b8;
+    color: #9ca3af;
     line-height: 1.7;
 }
 
@@ -435,22 +431,22 @@ nav ul li a:hover {
 }
 
 .skill-category {
-    background: rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(0, 212, 255, 0.1);
+    background: #1f2937;
+    border: 1px solid #374151;
     border-radius: 20px;
     padding: 30px;
     transition: all 0.3s ease;
 }
 
 .skill-category:hover {
-    border-color: rgba(0, 212, 255, 0.3);
+    border-color: rgba(139, 92, 246, 0.4);
     transform: translateY(-5px);
 }
 
 .skill-category h3 {
     font-size: 1.2rem;
     margin-bottom: 25px;
-    color: #00d4ff;
+    color: #8b5cf6;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -470,12 +466,12 @@ nav ul li a:hover {
 }
 
 .skill-item i {
-    color: #00d4ff;
+    color: #8b5cf6;
     font-size: 1.2rem;
 }
 
 .skill-item span {
-    color: #e5e7eb;
+    color: #f9fafb;
     font-weight: 500;
     grid-column: span 2;
     margin-left: 45px;
@@ -493,7 +489,7 @@ nav ul li a:hover {
 
 .skill-progress {
     height: 100%;
-    background: linear-gradient(90deg, #00d4ff, #0066ff);
+    background: linear-gradient(90deg, #8b5cf6, #a78bfa);
     border-radius: 10px;
     animation: fillBar 1.5s ease-out forwards;
     transform-origin: left;
@@ -511,7 +507,7 @@ nav ul li a:hover {
 
 /* Projects Section */
 #projects {
-    background: rgba(0, 0, 0, 0.2);
+    background: #1f2937;
 }
 
 .projects-container {
@@ -523,8 +519,8 @@ nav ul li a:hover {
 }
 
 .project-card {
-    background: linear-gradient(145deg, rgba(10, 10, 30, 0.8), rgba(20, 20, 50, 0.8));
-    border: 1px solid rgba(0, 212, 255, 0.1);
+    background: #111827;
+    border: 1px solid #374151;
     border-radius: 20px;
     padding: 30px;
     transition: all 0.4s ease;
@@ -539,7 +535,7 @@ nav ul li a:hover {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.1), transparent);
     transition: 0.5s;
 }
 
@@ -549,8 +545,8 @@ nav ul li a:hover {
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 50px rgba(0, 212, 255, 0.2);
-    border-color: rgba(0, 212, 255, 0.4);
+    box-shadow: 0 20px 50px rgba(139, 92, 246, 0.2);
+    border-color: rgba(139, 92, 246, 0.4);
 }
 
 .project-status {
@@ -565,9 +561,9 @@ nav ul li a:hover {
 }
 
 .project-status.completed {
-    background: rgba(0, 255, 136, 0.2);
-    color: #00ff88;
-    border: 1px solid rgba(0, 255, 136, 0.3);
+    background: rgba(139, 92, 246, 0.15);
+    color: #a78bfa;
+    border: 1px solid rgba(139, 92, 246, 0.3);
 }
 
 .project-status.ongoing {
@@ -579,24 +575,24 @@ nav ul li a:hover {
 .project-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #00d4ff, #0066ff);
+    background: linear-gradient(135deg, #8b5cf6, #a78bfa);
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    color: #fff;
+    color: #f9fafb;
     margin-bottom: 20px;
 }
 
 .project-card h3 {
     font-size: 1.3rem;
     margin-bottom: 15px;
-    color: #fff;
+    color: #f9fafb;
 }
 
 .project-problem {
-    color: #94a3b8;
+    color: #9ca3af;
     margin-bottom: 15px;
     font-size: 0.95rem;
 }
@@ -610,18 +606,18 @@ nav ul li a:hover {
 
 .project-tech span {
     padding: 5px 12px;
-    background: rgba(0, 212, 255, 0.1);
-    border: 1px solid rgba(0, 212, 255, 0.2);
+    background: rgba(139, 92, 246, 0.1);
+    border: 1px solid rgba(139, 92, 246, 0.2);
     border-radius: 20px;
     font-size: 0.8rem;
-    color: #00d4ff;
+    color: #a78bfa;
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
 .project-learning {
-    color: #64748b;
+    color: #9ca3af;
     font-size: 0.9rem;
     font-style: italic;
 }
@@ -637,10 +633,10 @@ nav ul li a:hover {
     gap: 8px;
     margin-top: 15px;
     padding: 10px 20px;
-    background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(0, 102, 255, 0.1));
-    border: 1px solid rgba(0, 212, 255, 0.3);
+    background: rgba(139, 92, 246, 0.1);
+    border: 1px solid rgba(139, 92, 246, 0.3);
     border-radius: 25px;
-    color: #00d4ff;
+    color: #8b5cf6;
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 500;
@@ -648,10 +644,10 @@ nav ul li a:hover {
 }
 
 .project-link:hover {
-    background: linear-gradient(135deg, #00d4ff, #0066ff);
-    color: #fff;
+    background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+    color: #f9fafb;
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0, 212, 255, 0.3);
+    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
 }
 
 /* Workshops Section */
@@ -661,8 +657,8 @@ nav ul li a:hover {
 }
 
 .workshop-card {
-    background: linear-gradient(145deg, rgba(0, 212, 255, 0.08), rgba(0, 102, 255, 0.08));
-    border: 2px solid rgba(0, 212, 255, 0.2);
+    background: rgba(139, 92, 246, 0.05);
+    border: 2px solid #374151;
     border-radius: 25px;
     padding: 40px;
     position: relative;
@@ -676,7 +672,7 @@ nav ul li a:hover {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: conic-gradient(from 0deg, transparent, rgba(0, 212, 255, 0.1), transparent 30%);
+    background: conic-gradient(from 0deg, transparent, rgba(139, 92, 246, 0.1), transparent 30%);
     animation: rotate 10s linear infinite;
 }
 
@@ -689,13 +685,13 @@ nav ul li a:hover {
 .workshop-badge {
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg, #00d4ff, #0066ff);
+    background: linear-gradient(135deg, #8b5cf6, #a78bfa);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.8rem;
-    color: #fff;
+    color: #f9fafb;
     margin: 0 auto 25px;
     position: relative;
     z-index: 1;
@@ -705,14 +701,14 @@ nav ul li a:hover {
     font-size: 1.6rem;
     text-align: center;
     margin-bottom: 10px;
-    color: #fff;
+    color: #f9fafb;
     position: relative;
     z-index: 1;
 }
 
 .workshop-org {
     text-align: center;
-    color: #00d4ff;
+    color: #8b5cf6;
     margin-bottom: 15px;
     position: relative;
     z-index: 1;
@@ -720,7 +716,7 @@ nav ul li a:hover {
 
 .workshop-desc {
     text-align: center;
-    color: #94a3b8;
+    color: #9ca3af;
     margin-bottom: 25px;
     position: relative;
     z-index: 1;
@@ -732,7 +728,7 @@ nav ul li a:hover {
 }
 
 .workshop-skills h4 {
-    color: #fff;
+    color: #f9fafb;
     margin-bottom: 15px;
     text-align: center;
 }
@@ -746,10 +742,10 @@ nav ul li a:hover {
 
 .workshop-tags span {
     padding: 10px 20px;
-    background: rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(0, 212, 255, 0.2);
+    background: #111827;
+    border: 1px solid #374151;
     border-radius: 25px;
-    color: #e5e7eb;
+    color: #f9fafb;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -757,8 +753,8 @@ nav ul li a:hover {
 }
 
 .workshop-tags span:hover {
-    background: rgba(0, 212, 255, 0.1);
-    border-color: rgba(0, 212, 255, 0.4);
+    background: rgba(139, 92, 246, 0.1);
+    border-color: rgba(139, 92, 246, 0.4);
     transform: translateY(-3px);
 }
 
@@ -778,7 +774,7 @@ nav ul li a:hover {
 
 /* Leadership Section */
 #leadership {
-    background: rgba(0, 0, 0, 0.2);
+    background: #1f2937;
 }
 
 .leadership-container {
@@ -790,36 +786,36 @@ nav ul li a:hover {
 }
 
 .leadership-card {
-    background: rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(0, 212, 255, 0.1);
+    background: #111827;
+    border: 1px solid #374151;
     border-radius: 20px;
     padding: 35px;
     transition: all 0.3s ease;
 }
 
 .leadership-card:hover {
-    border-color: rgba(0, 212, 255, 0.3);
+    border-color: rgba(139, 92, 246, 0.4);
     transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0, 212, 255, 0.1);
+    box-shadow: 0 15px 35px rgba(139, 92, 246, 0.1);
 }
 
 .leadership-icon {
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg, #00d4ff, #0066ff);
+    background: linear-gradient(135deg, #8b5cf6, #a78bfa);
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.8rem;
-    color: #fff;
+    color: #f9fafb;
     margin-bottom: 25px;
 }
 
 .leadership-card h3 {
     font-size: 1.3rem;
     margin-bottom: 20px;
-    color: #fff;
+    color: #f9fafb;
 }
 
 .leadership-card ul {
@@ -827,7 +823,7 @@ nav ul li a:hover {
 }
 
 .leadership-card li {
-    color: #94a3b8;
+    color: #9ca3af;
     margin-bottom: 12px;
     display: flex;
     align-items: flex-start;
@@ -836,7 +832,7 @@ nav ul li a:hover {
 }
 
 .leadership-card li i {
-    color: #00ff88;
+    color: #a78bfa;
     margin-top: 5px;
     flex-shrink: 0;
 }
@@ -850,8 +846,8 @@ nav ul li a:hover {
 .education-card {
     display: flex;
     gap: 30px;
-    background: linear-gradient(145deg, rgba(0, 212, 255, 0.05), rgba(0, 102, 255, 0.05));
-    border: 1px solid rgba(0, 212, 255, 0.2);
+    background: rgba(139, 92, 246, 0.05);
+    border: 1px solid #374151;
     border-radius: 25px;
     padding: 40px;
     position: relative;
@@ -862,8 +858,8 @@ nav ul li a:hover {
 }
 
 .year-badge {
-    background: linear-gradient(135deg, #00d4ff, #0066ff);
-    color: #fff;
+    background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+    color: #f9fafb;
     padding: 10px 20px;
     border-radius: 25px;
     font-weight: 600;
@@ -872,7 +868,7 @@ nav ul li a:hover {
 
 .education-content h3 {
     font-size: 1.5rem;
-    color: #fff;
+    color: #f9fafb;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
@@ -880,13 +876,13 @@ nav ul li a:hover {
 }
 
 .education-spec {
-    color: #00d4ff;
+    color: #8b5cf6;
     font-size: 1.1rem;
     margin-bottom: 20px;
 }
 
 .education-interests h4 {
-    color: #94a3b8;
+    color: #9ca3af;
     margin-bottom: 15px;
 }
 
@@ -898,10 +894,10 @@ nav ul li a:hover {
 
 .interest-tags span {
     padding: 8px 18px;
-    background: rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(0, 212, 255, 0.2);
+    background: #111827;
+    border: 1px solid #374151;
     border-radius: 20px;
-    color: #e5e7eb;
+    color: #f9fafb;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -910,12 +906,12 @@ nav ul li a:hover {
 
 /* Contact Section */
 #contact {
-    background: rgba(0, 0, 0, 0.2);
+    background: #1f2937;
 }
 
 .contact-intro {
     text-align: center;
-    color: #94a3b8;
+    color: #9ca3af;
     font-size: 1.2rem;
     margin-bottom: 50px;
     margin-top: -30px;
@@ -940,23 +936,23 @@ nav ul li a:hover {
     align-items: center;
     gap: 20px;
     padding: 25px;
-    background: rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(0, 212, 255, 0.1);
+    background: #111827;
+    border: 1px solid #374151;
     border-radius: 15px;
     transition: all 0.3s ease;
 }
 
 .contact-item:hover {
-    border-color: rgba(0, 212, 255, 0.3);
+    border-color: rgba(139, 92, 246, 0.4);
     transform: translateX(10px);
 }
 
 .contact-item i {
     font-size: 1.5rem;
-    color: #00d4ff;
+    color: #8b5cf6;
     width: 50px;
     height: 50px;
-    background: rgba(0, 212, 255, 0.1);
+    background: rgba(139, 92, 246, 0.1);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -964,19 +960,19 @@ nav ul li a:hover {
 }
 
 .contact-item h4 {
-    color: #fff;
+    color: #f9fafb;
     margin-bottom: 5px;
 }
 
 .contact-item a,
 .contact-item span {
-    color: #94a3b8;
+    color: #9ca3af;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .contact-item a:hover {
-    color: #00d4ff;
+    color: #8b5cf6;
 }
 
 .contact-form {
@@ -994,10 +990,10 @@ nav ul li a:hover {
     width: 100%;
     padding: 18px 20px;
     padding-left: 50px;
-    background: rgba(0, 0, 0, 0.4);
-    border: 2px solid rgba(0, 212, 255, 0.1);
+    background: #111827;
+    border: 2px solid #374151;
     border-radius: 15px;
-    color: #fff;
+    color: #f9fafb;
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     transition: all 0.3s ease;
@@ -1014,32 +1010,32 @@ nav ul li a:hover {
     left: 18px;
     top: 50%;
     transform: translateY(-50%);
-    color: #64748b;
+    color: #9ca3af;
     transition: color 0.3s ease;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #00d4ff;
-    box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+    border-color: #8b5cf6;
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.2);
 }
 
 .form-group input:focus+i,
 .form-group textarea:focus+i {
-    color: #00d4ff;
+    color: #8b5cf6;
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: #64748b;
+    color: #9ca3af;
 }
 
 /* Footer */
 footer {
-    background: rgba(5, 5, 20, 0.95);
+    background: #111827;
     padding: 50px 50px 30px;
-    border-top: 1px solid rgba(0, 212, 255, 0.1);
+    border-top: 1px solid #374151;
 }
 
 .footer-content {
@@ -1055,7 +1051,7 @@ footer {
 .footer-logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #00d4ff;
+    color: #8b5cf6;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -1067,13 +1063,13 @@ footer {
 }
 
 .footer-links a {
-    color: #94a3b8;
+    color: #9ca3af;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #00d4ff;
+    color: #8b5cf6;
 }
 
 .footer-social {
@@ -1084,29 +1080,29 @@ footer {
 .footer-social a {
     width: 45px;
     height: 45px;
-    background: rgba(0, 212, 255, 0.1);
-    border: 1px solid rgba(0, 212, 255, 0.2);
+    background: rgba(139, 92, 246, 0.1);
+    border: 1px solid #374151;
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #00d4ff;
+    color: #8b5cf6;
     font-size: 1.2rem;
     transition: all 0.3s ease;
 }
 
 .footer-social a:hover {
-    background: #00d4ff;
-    color: #0a0a1a;
+    background: #8b5cf6;
+    color: #111827;
     transform: translateY(-5px);
 }
 
 .copyright {
     text-align: center;
-    color: #64748b;
+    color: #9ca3af;
     font-size: 0.9rem;
     padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid #374151;
 }
 
 /* Scrollbar */
@@ -1115,12 +1111,24 @@ footer {
 }
 
 ::-webkit-scrollbar-track {
-    background: #0a0a1a;
+    background: #111827;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(135deg, #00d4ff, #0066ff);
+    background: linear-gradient(135deg, #8b5cf6, #a78bfa);
     border-radius: 4px;
+}
+
+/* Nav Toggle Button (hidden on desktop) */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #f9fafb;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1001;
 }
 
 /* Responsive */
@@ -1129,28 +1137,77 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section {
+        padding: 80px 30px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .home h1 {
+        font-size: 2.8rem;
+    }
 }
 
 /* Text Selection */
 ::selection {
-    background: rgba(0, 212, 255, 0.3);
-    color: #fff;
+    background: rgba(139, 92, 246, 0.3);
+    color: #f9fafb;
 }
 
 @media (max-width: 768px) {
+
+    /* Hamburger Nav */
+    .nav-toggle {
+        display: block;
+    }
+
     nav {
         padding: 15px 20px;
-        flex-direction: column;
-        gap: 15px;
+        flex-wrap: wrap;
     }
 
     nav ul {
-        justify-content: center;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        padding-top: 15px;
+        border-top: 1px solid #374151;
+        margin-top: 10px;
     }
 
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li a {
+        padding: 12px 15px;
+        width: 100%;
+        justify-content: flex-start;
+        font-size: 0.95rem;
+        border-radius: 10px;
+    }
+
+    /* Hero */
     .section {
         padding: 80px 20px;
+        min-height: auto;
+    }
+
+    .home {
+        padding-top: 100px;
+        min-height: auto;
     }
 
     .home h1 {
@@ -1161,23 +1218,211 @@ footer {
         font-size: 1.1rem;
     }
 
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
     .cta-buttons {
         flex-direction: column;
         align-items: center;
     }
 
+    .btn-primary,
+    .btn-secondary,
+    .btn-outline {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+
+    /* About */
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card {
+        padding: 30px 20px;
+    }
+
+    /* Skills */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .skill-category {
+        padding: 25px 20px;
+    }
+
+    /* Projects */
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding: 25px;
+    }
+
+    /* Workshops */
+    .workshop-card {
+        padding: 25px;
+    }
+
+    .workshop-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .workshop-tags {
+        gap: 8px;
+    }
+
+    .workshop-tags span {
+        padding: 8px 14px;
+        font-size: 0.85rem;
+    }
+
+    /* Leadership */
+    .leadership-container {
+        grid-template-columns: 1fr;
+    }
+
+    .leadership-card {
+        padding: 25px;
+    }
+
+    /* Education */
     .education-card {
         flex-direction: column;
         text-align: center;
+        padding: 30px 20px;
+    }
+
+    .education-content h3 {
+        justify-content: center;
+        font-size: 1.3rem;
+    }
+
+    .interest-tags {
+        justify-content: center;
+    }
+
+    /* Contact */
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contact-item {
+        padding: 20px;
+    }
+
+    .contact-intro {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 30px 20px 20px;
     }
 
     .footer-content {
         flex-direction: column;
         text-align: center;
+        gap: 15px;
     }
 
     .footer-links {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 15px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home h1 {
+        font-size: 1.7rem;
+    }
+
+    .subtitle {
+        font-size: 0.95rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    nav ul li a {
+        font-size: 0.85rem;
+        padding: 10px 12px;
+    }
+
+    .about-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    .project-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+        border-radius: 12px;
+    }
+
+    .workshop-badge {
+        width: 55px;
+        height: 55px;
+        font-size: 1.4rem;
+    }
+
+    .leadership-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 1.4rem;
+        border-radius: 15px;
+    }
+
+    .contact-item i {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .btn-primary,
+    .btn-secondary,
+    .btn-outline {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 25px 15px 15px;
+    }
+
+    .copyright {
+        font-size: 0.8rem;
     }
 }

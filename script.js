@@ -136,11 +136,11 @@ function initNavbarEffect() {
 
     window.addEventListener('scroll', () => {
         if (window.scrollY > 100) {
-            nav.style.background = 'rgba(10, 10, 30, 0.98)';
+            nav.style.background = 'rgba(17, 24, 39, 0.98)';
             nav.style.boxShadow = '0 5px 30px rgba(0, 0, 0, 0.3)';
             nav.style.padding = '10px 40px';
         } else {
-            nav.style.background = 'rgba(10, 10, 30, 0.9)';
+            nav.style.background = 'rgba(17, 24, 39, 0.95)';
             nav.style.boxShadow = 'none';
             nav.style.padding = '15px 40px';
         }
@@ -172,10 +172,10 @@ function initActiveNavLink() {
 
     const style = document.createElement('style');
     style.textContent = `
-        nav ul li a.active { color: #00d4ff; background: rgba(0, 212, 255, 0.1); }
+        nav ul li a.active { color: #8b5cf6; background: rgba(139, 92, 246, 0.1); }
         nav ul li a::after {
             content: ''; position: absolute; bottom: 0; left: 50%; width: 0; height: 2px;
-            background: linear-gradient(90deg, #00d4ff, #ff00ff); transition: all 0.3s ease; transform: translateX(-50%);
+            background: linear-gradient(90deg, #8b5cf6, #a78bfa); transition: all 0.3s ease; transform: translateX(-50%);
         }
         nav ul li a:hover::after, nav ul li a.active::after { width: 80%; }
     `;
@@ -261,7 +261,7 @@ function initFormHandler() {
 
             setTimeout(() => {
                 button.innerHTML = '<i class="fas fa-check"></i> Sent!';
-                button.style.background = 'linear-gradient(135deg, #00ff88, #00d4ff)';
+                button.style.background = 'linear-gradient(135deg, #8b5cf6, #a78bfa)';
 
                 showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
 
@@ -283,11 +283,11 @@ function showNotification(message, type = 'info') {
 
     notification.style.cssText = `
         position: fixed; top: 100px; right: 20px;
-        background: ${type === 'success' ? 'linear-gradient(135deg, #00ff88, #00d4ff)' : 'rgba(0, 212, 255, 0.9)'};
-        color: #0a0a1a; padding: 15px 25px; border-radius: 15px;
+        background: ${type === 'success' ? 'linear-gradient(135deg, #8b5cf6, #a78bfa)' : 'rgba(139, 92, 246, 0.9)'};
+        color: #f9fafb; padding: 15px 25px; border-radius: 15px;
         display: flex; align-items: center; gap: 10px; font-weight: 600;
         z-index: 10000; animation: slideInRight 0.5s ease-out;
-        box-shadow: 0 10px 40px rgba(0, 255, 136, 0.3);
+        box-shadow: 0 10px 40px rgba(139, 92, 246, 0.3);
     `;
 
     document.body.appendChild(notification);
@@ -343,10 +343,27 @@ document.addEventListener('DOMContentLoaded', function () {
     initSmoothScroll();
     initParallax();
 
-    // Scramble effect on hover for project titles
-    document.querySelectorAll('.project-card h3').forEach(title => {
-        title.addEventListener('mouseenter', () => scrambleText(title));
-    });
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('nav ul');
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = navToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Close menu when a nav link is clicked
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                const icon = navToggle.querySelector('i');
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+            });
+        });
+    }
 
     console.log('🛡️ Portfolio loaded with animations!');
 });
