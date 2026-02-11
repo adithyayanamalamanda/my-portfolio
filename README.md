@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio! This website showcases my journey, skills, and projects in **Cybersecurity**, **Data Science**, and **Artificial Intelligence**.
 
-> **Live Demo:** [Check it out here](#) *(https://adithya-portfolio1.netlify.app/)*
+> **Live Demo:** https://adithya-portfolio1.netlify.app/
 
 ---
 
