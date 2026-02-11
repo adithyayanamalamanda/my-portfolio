@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio! This website showcases my journey, skills, and projects in **Cybersecurity**, **Data Science**, and **Artificial Intelligence**.
 
-> **Live Demo:** [Check it out here](#) *(Add your live link here)*
+> **Live Demo:** [Check it out here](#) *(https://adithya-portfolio1.netlify.app/)*
 
 ---
 
@@ -24,7 +24,6 @@ Welcome to my personal portfolio! This website showcases my journey, skills, and
 ## 🛠️ Tech Stack
 
 - **Frontend**: HTML5, CSS3, JavaScript (Vanilla)
-- **Icons**: [FontAwesome 6](https://fontawesome.com/)
 - **Fonts**: Google Fonts (Inter, Fira Code)
 - **Animations**: Custom CSS & JS animations (no heavy libraries)
 
